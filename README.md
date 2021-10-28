@@ -30,6 +30,6 @@ Commit Date: 26th October 2021
 * [Responsive Gallery with Vanilla JavaScript ES6](https://itsgus.dev/2021/vanilla-javascript-gallery)
 
 
-A List of JavaScript Array Methods
+<!-- A List of JavaScript Array Methods -->
 <!-- guide  https://github.com/nitishdayal/JavaScript30 -->
 <!-- formatting read.me https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax -->
