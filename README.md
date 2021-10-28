@@ -25,9 +25,9 @@ Commit Date: 26th October 2021
 <!-- To use arrays to sortcut operations -->
  
 ## Useful links
-<!-- * [The JavaScript Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) 
-* [The JavaScript Array Handbook](https://www.freecodecamp.org/news/the-javascript-array-handbook/) 
-* [A List of JavaScript Array Methods](https://medium.com/@mandeepkaur1/a-list-of-javascript-array-methods-145d09dd19a0)  -->
+* [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
+* [Creating an infinite gallery with vanilla JS](https://weareferal.com/blog/creating-an-infinite-gallery-with-vanilla-js) 
+* [Responsive Gallery with Vanilla JavaScript ES6](https://itsgus.dev/2021/vanilla-javascript-gallery)
 
 
 A List of JavaScript Array Methods
