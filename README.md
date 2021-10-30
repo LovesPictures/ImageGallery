@@ -22,6 +22,10 @@ Commit Date: 26th October 2021
     
 ## Approach
 
+![image](https://user-images.githubusercontent.com/25634451/139527566-d4ca18eb-0629-4cbf-91ec-254eb1f6bfab.png)
+<!-- after stage 10 in the code  -->
+Nested flexbox, work in progress 
+
 <!-- To use arrays to sortcut operations -->
  
 ## Useful links
