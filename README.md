@@ -27,6 +27,10 @@ Commit Date: 26th October 2021
 Nested flexbox, work in progress 
 
 <!-- To use arrays to sortcut operations -->
+
+![image](https://user-images.githubusercontent.com/25634451/139581859-7ef6532b-e778-4c65-a7a2-5c0c71a413bb.png)
+<!-- after stage 18 in the code  -->
+Listening for 'click' event to grow and end the animation 
  
 ## Useful links
 * [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
