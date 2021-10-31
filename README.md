@@ -24,9 +24,11 @@ Nested flexbox, work in progress
 Listening for 'click' event to grow and end the animation 
 
 <!-- elements -->
+<!-- elements -->
  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 <!-- elements -->
+ 
  
 ## Useful links
 * [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
