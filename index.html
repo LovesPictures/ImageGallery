@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels 💪</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'> -->
+  
+  
+</head>
+<body>
+  <style>
+
+    /* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+    @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+    html {
+      box-sizing: border-box;
+      background: #ffc600;
+      /* font-family: 'helvetica neue'; */
+      font-size: 10px;
+      font-weight: 100;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .panels {
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;   /* 1-  side by side  */ 
+    }
+
+    .panel {
+      background: #6B0F9C;
+      box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+      color: white;
+      text-align: center;
+      align-items: center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      font-size: 10px;
+      background-size: cover;
+      background-position: center;
+      flex: 1;                          /* 2- divide the panels between the availible space*/
+      justify-content: center;          /* 4 - centre  left to right */
+      align-items: center;              /* 5 - alighn to the centre */
+      display: flex;                    /* 6 - nest flexbox */
+      flex-direction: column;           /* 7 - from default of left to right, to virtical coloum centre*/
+      /* border: solid red;               - temp to  see the panel  */
+    }
+
+    .panel1 { background-image:url(https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop); }
+    .panel2 { background-image:url(https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop); }
+    .panel3 { background-image:url(https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop); }
+    .panel4 { background-image:url(https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop); }
+    .panel5 { background-image:url(https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop); }
+    /* .panel6 { background-image:url(https://source.unsplash.com/random/800x500); } */
+
+  
+
+    /* Flex children */
+    .panel > * {
+      margin: 0;
+      width: 100%;
+      transition: transform 0.5s;
+      flex: 1 0 auto;                   /* 3- temp border so we can see what is going on */
+      display: flex;                    /* 8 - distribute the text */
+      justify-content: center;          /* 9 centre the text */
+      align-items: center;              /* 10 - then align the text  */
+     
+    }
+
+    /* 11 - Hide the div off screen at the top of the page in the Y direction  */
+    .panel > *:first-child { transform: translateY(-100%); }
+     /* 13 - .panel.open-active has the child animated in  */
+    .panel.open-active > *:first-child { transform: translateY(0); }
+
+    /* 12 - hide the dive at the bottom of the page  */
+    .panel > *:last-child { transform: translateY(100%); }
+    /* 14 - .panel.open-active has the child animated in  */
+    .panel.open-active > *:last-child { transform: translateY(0); }
+
+    .panel p {
+      /* text-transform: uppercase; */
+      font-family: "Share Tech Mono", monospace;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 2em;
+    }
+    
+    .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+      /* 15 - needs to make the text larger by taking 5 x the extra room form the flex 1 above*/  
+      flex: 5;
+      font-size: 20px; 
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .panel p {
+        font-size: 1em;
+      }
+    }
+  </style>
+
+<!-- flex panels  -->
+  <div class="panels">                   <!-- flex container -->
+    <div class="panel panel1">           <!-- flex item, becomming a container 'nested flexbox' -->
+      <p>Hey</p>
+      <p>Let's</p>
+      <p>Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p>Give</p>
+      <p>Take</p>
+      <p>Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p>Experience</p>
+      <p>It</p>
+      <p>Today</p>
+    </div>
+    <div class="panel panel4">
+      <p>Give</p>
+      <p>All</p>
+      <p>You can</p>
+    </div>
+    <div class="panel panel5">
+      <p>Life</p>
+      <p>In</p>
+      <p>Motion</p>
+    </div>
+  </div>
+
+  <script>
+
+    // adds and reoves the clssses
+    // 15 - take all the panels
+    const panels = document.querySelectorAll('.panel');
+
+    // 16 function the toggles the class on/open
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+    
+    function toggleActive(e) {
+       // 18 find which end event we want to end paired with below
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {   //flex-grow in some browers, this 'inludes' covers the bases
+        this.classList.toggle('open-active');
+      }
+    }
+    
+    // each of the panels listen for a click
+    // 17 take the panels, listen for a click, then run the reference to the toggleOen function - not toggleOen ()
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    
+    // listen for the transition end event 
+    // 18 to find which end event we cant to end console.log as above
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+
+</body>
+</html>
