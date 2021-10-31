@@ -9,6 +9,8 @@ Commit Date: 26th October 2021
 
 <!-- Javascript array methods are arrays forming a data structure containing list of elements which store multiple values in a single variable. The strength of JavaScript arrays lies in the array methods which are built-in functions we can apply to our arrays.  Each method has a unique function that performs a change or calculation to our array, saving having to write common functions from scratch. -->
 
+![image](https://user-images.githubusercontent.com/25634451/139583986-0abf4818-03ae-43f5-b326-fb936e86b74d.png)
+
 ![image](https://res.cloudinary.com/practicaldev/image/fetch/s--JCmxZtaZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r82p7z3s8298vijf2guh.jpg)
 
 <!-- elements -->
@@ -36,6 +38,7 @@ Listening for 'click' event to grow and end the animation
 * [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
 * [Creating an infinite gallery with vanilla JS](https://weareferal.com/blog/creating-an-infinite-gallery-with-vanilla-js) 
 * [Responsive Gallery with Vanilla JavaScript ES6](https://itsgus.dev/2021/vanilla-javascript-gallery)
+* [What is flexbox] (https://flexbox.io/)
 
 
 <!-- A List of JavaScript Array Methods -->
