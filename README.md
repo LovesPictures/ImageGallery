@@ -17,7 +17,7 @@ Commit Date: 31 st October 2021
 <!-- after stage 10 in the code  -->
 Nested flexbox, work in progress 
 
-## listening event 
+## Listening event 
 
 ![image](https://user-images.githubusercontent.com/25634451/139581859-7ef6532b-e778-4c65-a7a2-5c0c71a413bb.png)
 <!-- after stage 18 in the code  -->
@@ -26,16 +26,6 @@ Listening for 'click' event to grow and end the animation
 
       panels.forEach(panel => panel.addEventListener('click', toggleOpen));
           panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-
-
-<!-- elements -->
-
-      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-          panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-          
-<!-- elements -->
-
- 
  
 ## Useful links
 * [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
