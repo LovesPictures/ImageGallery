@@ -17,6 +17,7 @@ Commit Date: 31 st October 2021
 <!-- after stage 10 in the code  -->
 Nested flexbox, work in progress 
 
+<!-- elements -->
 ### listening event 
 
 ![image](https://user-images.githubusercontent.com/25634451/139581859-7ef6532b-e778-4c65-a7a2-5c0c71a413bb.png)
@@ -31,14 +32,8 @@ Listening for 'click' event to grow and end the animation
 
 <!-- elements -->
 ### long version of the code 
-    const ordered = inventors.sort(function(a,b){
-        if(a.year > b.year) {
-              return 1;
-       } else {
-        return -1;
-       }
-    });    
-    console.table(ordered);
+ panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+   panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 <!-- elements -->
 <!-- elements -->
  
