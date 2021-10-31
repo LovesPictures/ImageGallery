@@ -11,7 +11,6 @@ Commit Date: 26th October 2021
 
 ![image](https://user-images.githubusercontent.com/25634451/139583986-0abf4818-03ae-43f5-b326-fb936e86b74d.png)
 
-![image](https://res.cloudinary.com/practicaldev/image/fetch/s--JCmxZtaZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r82p7z3s8298vijf2guh.jpg)
 
 <!-- elements -->
 ### long version of the code 
@@ -38,7 +37,7 @@ Listening for 'click' event to grow and end the animation
 * [40 CSS & Javascript Image Gallery Examples](https://bashooka.com/coding/css-javascript-image-gallery-examples/) 
 * [Creating an infinite gallery with vanilla JS](https://weareferal.com/blog/creating-an-infinite-gallery-with-vanilla-js) 
 * [Responsive Gallery with Vanilla JavaScript ES6](https://itsgus.dev/2021/vanilla-javascript-gallery)
-* [What is flexbox] (https://flexbox.io/)
+* [What is flexbox?](https://flexbox.io/)
 
 
 <!-- A List of JavaScript Array Methods -->
