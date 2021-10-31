@@ -24,20 +24,15 @@ Nested flexbox, work in progress
 Listening for 'click' event to grow and end the animation 
 
 
- panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-   panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+          panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 
 <!-- elements -->
-### long version of the code 
-    const ordered = inventors.sort(function(a,b){
-        if(a.year > b.year) {
-              return 1;
-       } else {
-        return -1;
-       }
-    });    
-    console.table(ordered);
+
+      panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+          panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+          
 <!-- elements -->
 
  
